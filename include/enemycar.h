@@ -9,10 +9,9 @@
 
 
 class Enemy{
-      public:
+   public:
       int id;
       Spacecar* spacecar;
-     
       Enemy(int id,Spacecar* spacecar):id(id),spacecar(spacecar){}
  };
 
@@ -20,9 +19,9 @@ class Enemy{
 class CollisionSpawn
 {
   public:
-  int timestamp=0;
-  int id;
-  CollisionSpawn(int timestamp,int id):timestamp(timestamp),id(id){}
+    int timestamp=0;
+    int id;
+    CollisionSpawn(int timestamp,int id):timestamp(timestamp),id(id){}
 };
 
 
