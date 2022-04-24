@@ -17,7 +17,7 @@ void Bullet::move()
   {
     starty+=1;
   }
-    renderer->CreateVisualBullet(startx,starty,sizex,sizey);
+  renderer->CreateVisualBullet(startx,starty,sizex,sizey);
 }
         
 void Bullet::UpdateVisual()
