@@ -64,7 +64,6 @@ void Renderer::Clear()
 
 void Renderer::CreateVisualWeapon(int centerx,int centery,int sizex,int sizey)
 {
-
   SDL_SetRenderDrawColor(sdl_renderer, 0x00, 0xCC, 0xFF, 0xFF);
   SDL_Rect block;
 
@@ -79,7 +78,6 @@ void Renderer::CreateVisualWeapon(int centerx,int centery,int sizex,int sizey)
 
 void Renderer::CreateVisualBullet(int startx,int starty,int sizex,int sizey)
 {
-
   SDL_SetRenderDrawColor(sdl_renderer, 0x00, 0xCC, 0xFF, 0xFF);
   SDL_Rect block;
 
