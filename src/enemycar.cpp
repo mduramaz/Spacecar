@@ -146,11 +146,10 @@ void EnemyCar::collitionMyCar(bool& loop)
 {
  
     std::vector<Bullet*> bulletEnemy=totalEnemyBullet();
-
-	int enemy_x1=spacecar->getcenterx();
-	int enemy_x2=spacecar->getcenterx()+spacecar->getsizex();
-	int enemy_y1=spacecar->getcentery();
-	int enemy_y2=spacecar->getcentery()+spacecar->getsizey();
+    int enemy_x1=spacecar->getcenterx();
+    int enemy_x2=spacecar->getcenterx()+spacecar->getsizex();
+    int enemy_y1=spacecar->getcentery();
+    int enemy_y2=spacecar->getcentery()+spacecar->getsizey();
 
 
     for(int i=0; i<bulletEnemy.size(); i++){
@@ -175,7 +174,6 @@ void EnemyCar::collitionMyCar(bool& loop)
 
 int EnemyCar::getDiedEnemy()
 {
-
-return diedEnemy;
+  return diedEnemy;
 }
 
