@@ -12,19 +12,18 @@ EnemyCar::EnemyCar(Renderer *renderer,int cars,Spacecar *spacecar):cars(cars),re
 
 void EnemyCar::Collision()
 {
-
     for(int i=0; i<collision_enemy_id.size(); i++)
     {
        if(++collision_enemy_id[i]->timestamp>500)
        {
               collision_enemy_id.erase(collision_enemy_id.begin()+i);
-
        }
     }
     comeingbullets=spacecar->weapon->getBullets();
 
-    for(int i=0; i<comeingbullets.size(); i++){
-	    for(int j=0; j<emenycars.size(); j++)
+    for(int i=0; i<comeingbullets.size(); i++)
+    {
+	for(int j=0; j<emenycars.size(); j++)
         {
               bool check=true;
               for(int test=0; test<collision_enemy_id.size(); test++)
@@ -57,11 +56,9 @@ void EnemyCar::Collision()
                    emenycars[j]->spacecar->weapon->eraseAllBullet();
                    diedEnemy++;
                 }
-
-               
              }
-	      }            
-        }
+	}            
+     }
 
    }
 
@@ -69,7 +66,6 @@ void EnemyCar::Collision()
 
 void EnemyCar::RandomMove()
 {
-
  for(int i=0; i<cars; i++)
  {
      bool check=true;
@@ -170,7 +166,6 @@ void EnemyCar::collitionMyCar(bool& loop)
  }
 
 }
-
 
 int EnemyCar::getDiedEnemy()
 {
