@@ -142,13 +142,14 @@ return enemybullet;
 void EnemyCar::collitionMyCar(bool& loop)
 {
  
-    std::vector<Bullet*> bulletEnemy=totalEnemyBullet();
     int enemy_x1=spacecar->getcenterx();
     int enemy_x2=spacecar->getcenterx()+spacecar->getsizex();
+	
     int enemy_y1=spacecar->getcentery();
     int enemy_y2=spacecar->getcentery()+spacecar->getsizey();
 
-
+    std::vector<Bullet*> bulletEnemy=totalEnemyBullet();
+	
     for(int i=0; i<bulletEnemy.size(); i++){
          
 	int bullet_x1=bulletEnemy[i]->getstartx();
