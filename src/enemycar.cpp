@@ -36,26 +36,27 @@ void EnemyCar::Collision()
               }
               if(comeingbullets.size()>0 && check)
               {
-		        int enemy_x1=emenycars[j]->spacecar->getcenterx();
-		        int enemy_x2=emenycars[j]->spacecar->getcenterx()+emenycars[j]->spacecar->getsizex();
-		        int enemy_y1=emenycars[j]->spacecar->getcentery();
-		        int enemy_y2=emenycars[j]->spacecar->getcentery()+emenycars[j]->spacecar->getsizey();
+		 int enemy_x1=emenycars[j]->spacecar->getcenterx();
+		 int enemy_x2=emenycars[j]->spacecar->getcenterx()+emenycars[j]->spacecar->getsizex();
+		      
+		 int enemy_y1=emenycars[j]->spacecar->getcentery();
+		 int enemy_y2=emenycars[j]->spacecar->getcentery()+emenycars[j]->spacecar->getsizey();
 
-		        int bullet_x1=comeingbullets[i]->getstartx();
-		        int bullet_x2=comeingbullets[i]->getstartx()+comeingbullets[i]->getsizex();
+		 int bullet_x1=comeingbullets[i]->getstartx();
+		 int bullet_x2=comeingbullets[i]->getstartx()+comeingbullets[i]->getsizex();
 
-		        int bullet_y1=comeingbullets[i]->getstarty();
-		        int bullet_y2=comeingbullets[i]->getstarty()+comeingbullets[i]->getsizey();
+		 int bullet_y1=comeingbullets[i]->getstarty();
+		 int bullet_y2=comeingbullets[i]->getstarty()+comeingbullets[i]->getsizey();
 
      
-                if(((enemy_x1<bullet_x1 && enemy_x2>bullet_x1) || (enemy_x1<bullet_x2 && enemy_x2>bullet_x2)) && ((enemy_y1<bullet_y1 && enemy_y2>bullet_y1) || (enemy_y1<bullet_y2 && enemy_y2>bullet_y2))) 
-                { 
-                   printf("collision !!! %d\n",j);
-                   collision_enemy_id.push_back(new CollisionSpawn(0,j));
-                   spacecar->weapon->eraseBullet(i);
-                   emenycars[j]->spacecar->weapon->eraseAllBullet();
-                   diedEnemy++;
-                }
+                 if(((enemy_x1<bullet_x1 && enemy_x2>bullet_x1) || (enemy_x1<bullet_x2 && enemy_x2>bullet_x2)) && ((enemy_y1<bullet_y1 && enemy_y2>bullet_y1) || (enemy_y1<bullet_y2 && enemy_y2>bullet_y2))) 
+                 { 
+                    printf("collision !!! %d\n",j);
+                    collision_enemy_id.push_back(new CollisionSpawn(0,j));
+                    spacecar->weapon->eraseBullet(i);
+                    emenycars[j]->spacecar->weapon->eraseAllBullet();
+                    diedEnemy++;
+                 }
              }
 	}            
      }
