@@ -1,9 +1,12 @@
 
 # Project description
+
      This project aims is hobby.
      If the bullet hits our vehicle, we die and the game is over.
      We need to escape from the fires so that the game does not end. 
      You can shoot with the "s" key and move with the arrow keys.
+
+
 
 # Picture
 
