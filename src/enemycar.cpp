@@ -1,5 +1,7 @@
 #include "enemycar.h"
 #include "params.h"
+
+
 EnemyCar::EnemyCar(Renderer *renderer,int cars,Spacecar *spacecar):cars(cars),renderer(renderer),spacecar(spacecar)
 {
   int distance=kScreenWidth/(cars+1);
@@ -86,9 +88,6 @@ void EnemyCar::RandomMove()
 }
 
 
-
-
-
 void EnemyCar::RandomFireBullet()
 {
   for(int i=0; i<cars; i++)
@@ -98,7 +97,6 @@ void EnemyCar::RandomFireBullet()
       emenycars[i]->spacecar->weapon->AddBulletWindow();
   }
 }
-
 
 
 void EnemyCar::UpdateVisual()
@@ -124,7 +122,6 @@ void EnemyCar::UpdateVisual()
 }
 
 
-
 std::vector<Bullet*> EnemyCar::totalEnemyBullet()
 {
   std::vector<Bullet*> enemybullet;
@@ -136,8 +133,9 @@ std::vector<Bullet*> EnemyCar::totalEnemyBullet()
    	enemybullet.push_back(emeca[j]);
   }
 
-return enemybullet;
+  return enemybullet;
 }
+
 
 void EnemyCar::collitionMyCar(bool& loop)
 {
@@ -150,7 +148,8 @@ void EnemyCar::collitionMyCar(bool& loop)
 
     std::vector<Bullet*> bulletEnemy=totalEnemyBullet();
 	
-    for(int i=0; i<bulletEnemy.size(); i++){
+    for(int i=0; i<bulletEnemy.size(); i++)
+    {
          
 	int bullet_x1=bulletEnemy[i]->getstartx();
 	int bullet_x2=bulletEnemy[i]->getstartx()+bulletEnemy[i]->getsizex();
@@ -159,15 +158,14 @@ void EnemyCar::collitionMyCar(bool& loop)
 	int bullet_y2=bulletEnemy[i]->getstarty()+bulletEnemy[i]->getsizey();
 
 
-    if(((enemy_x1<bullet_x1 && enemy_x2>bullet_x1) || (enemy_x1<bullet_x2 && enemy_x2>bullet_x2)) && ((enemy_y1<bullet_y1 && enemy_y2>bullet_y1) || (enemy_y1<bullet_y2 && enemy_y2>bullet_y2))) 
-    { 
-       loop=false;
-       printf("You Died !!!!!!!!!!!!!!!!!!!\n Rest in peace\n ");
-    }
-
- }
-
+        if(((enemy_x1<bullet_x1 && enemy_x2>bullet_x1) || (enemy_x1<bullet_x2 && enemy_x2>bullet_x2)) && ((enemy_y1<bullet_y1 && enemy_y2>bullet_y1) || (enemy_y1<bullet_y2 && enemy_y2>bullet_y2))) 
+        { 
+          loop=false;
+          printf("You Died !!!!!!!!!!!!!!!!!!!\n Rest in peace\n ");
+        }
+     }
 }
+
 
 int EnemyCar::getDiedEnemy()
 {
