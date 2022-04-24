@@ -16,7 +16,7 @@ class Game{
            Spacecar *spacecar;
            std::vector<Spacecar*> enemyCar;
            void GeneretaEnemy(int enemysize);
-	       void counter();
+	   void counter();
            int count=0;
 
 };
