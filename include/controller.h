@@ -4,12 +4,8 @@
 #include "enemycar.h" 
 
 class Controller {
-         
 	  public:
-           void HandleInput(bool running,Spacecar *spacecar);
-		 
-
-
+             void HandleInput(bool running,Spacecar *spacecar);
 };
 
 #endif
