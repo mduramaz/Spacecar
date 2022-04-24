@@ -5,6 +5,7 @@
      We need to escape from the fires so that the game does not end. 
      You can shoot with the "s" key and move with the arrow keys.
 
+# Picure
 
    ![picture](https://github.com/mduramaz/Spacecar/blob/main/picture.png)
 
