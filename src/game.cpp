@@ -32,11 +32,3 @@ Game::Game( Renderer *renderer):renderer(renderer)
 
   }
 } 
-
-
- 
- 
-
-  
-
-
