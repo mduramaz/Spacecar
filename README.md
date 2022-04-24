@@ -6,7 +6,7 @@
      You can shoot with the "s" key and move with the arrow keys.
 
 
-![picture](https://github.com/mduramaz/Spacecar/blob/main/picture.png)
+                            ![picture](https://github.com/mduramaz/Spacecar/blob/main/picture.png)
 
 
 
