@@ -16,5 +16,5 @@ class Weapon{
          void eraseBullet(int i){  bullets.erase (bullets.begin()+i);};
          std::vector<Bullet*> getBullets()const{return bullets;}
          void eraseAllBullet();
-	std::vector<Bullet*> bullets;
+	 std::vector<Bullet*> bullets;
 };
