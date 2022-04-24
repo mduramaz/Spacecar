@@ -2,10 +2,6 @@
 #include "controller.h"
 #include <thread>
  
-
-
-
- 
 class Game{
         private:
            Renderer *renderer;      
