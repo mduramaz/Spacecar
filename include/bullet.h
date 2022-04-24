@@ -1,7 +1,5 @@
 #include "renderer.h"
 
-
-
 class Bullet
 {
    private:
