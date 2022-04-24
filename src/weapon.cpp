@@ -35,8 +35,7 @@ void Weapon::eraseAllBullet()
 }
 
 void Weapon::UpdateBullet()
-{
-           
+{     
   for(int i=0; i<bullets.size(); i++)
   {
      if(bullets[i]->getstarty()<0 || bullets[i]->getstarty()>kScreenHeight)
