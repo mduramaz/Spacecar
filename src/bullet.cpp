@@ -1,7 +1,6 @@
 #include "renderer.h"
 #include "bullet.h"
 
-
 Bullet::Bullet(int sizex,int sizey,int startx,int starty,Renderer *renderer,int direction):sizex(sizex),sizey(sizey),startx(startx),starty(starty),renderer(renderer),direction(direction)
 {
   renderer->CreateVisualBullet(startx,starty,sizex,sizey);
