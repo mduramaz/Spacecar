@@ -1,9 +1,9 @@
 
-*Project description*
+# Project description
      This project aims is hobby.
      If the bullet hits our vehicle, we die and the game is over. We need to escape from the fires so that the game does not end. You can shoot with the "s" key and move with the arrow keys.
 
-*Dependencies for Running Locally*
+# Dependencies for Running Locally
 
   cmake >= 3.7
     All OSes: click here for installation instructions
@@ -19,7 +19,7 @@
     Linux: gcc / g++ is installed by default on most Linux distros
 
 
-*Basic Build Instructions*
+# Basic Build Instructions
 
   1.) make build
 
