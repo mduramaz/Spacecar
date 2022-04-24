@@ -1,6 +1,5 @@
 #include "renderer.h"
 #include "controller.h"
-#include <thread>
  
 class Game{
         private:
