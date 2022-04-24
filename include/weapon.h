@@ -1,6 +1,7 @@
 #include "renderer.h"
 #include "bullet.h"
 #include <iostream>
+
 class Weapon{
       private:
 	int centerx,centery,sizex,sizey,speed,carsizex,carsizey,direction=1;
