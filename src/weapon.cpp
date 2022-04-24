@@ -33,8 +33,7 @@ void Weapon::MoveAllBullet()
 }
 void Weapon::eraseAllBullet()
 {
-
-bullets.clear();
+  bullets.clear();
 }
 
 void Weapon::UpdateBullet()
